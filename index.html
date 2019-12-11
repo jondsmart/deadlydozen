@@ -1,0 +1,170 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+        <a-assets>
+            <a-asset-item id="jacksonville" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/jacksonville.gltf"></a-asset-item>
+            <a-asset-item id="losangeles" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/losangeles.gltf"></a-asset-item>
+            <a-asset-item id="chicago" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/chicago.gltf"></a-asset-item>
+            <a-asset-item id="austin" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/austin.gltf"></a-asset-item>
+            <a-asset-item id="phoenix" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/phoenix.gltf"></a-asset-item>
+            <a-asset-item id="neworleans" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/neworleans.gltf"></a-asset-item>
+            <a-asset-item id="sanantonio" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/sanantonio.gltf"></a-asset-item>
+            <a-asset-item id="newyork" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/newyork.gltf"></a-asset-item>
+            
+            <a-asset-item id="lasvegas" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/lasvegas.gltf"></a-asset-item>
+            <a-asset-item id="nashville" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/nashville.gltf"></a-asset-item>
+            <a-asset-item id="dc" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/dc.gltf"></a-asset-item>
+            <a-asset-item id="atlanta" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/atlanta.gltf"></a-asset-item>
+            <a-asset-item id="oklahoma" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/oklahoma.gltf"></a-asset-item>
+            <a-asset-item id="miami" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/miami.gltf"></a-asset-item>
+            <a-asset-item id="denver" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/denver.gltf"></a-asset-item>
+            <a-asset-item id="sanfran" src="https://raw.githubusercontent.com/jondsmart/deadlydozen/master/sanfran.gltf"></a-asset-item>
+            
+                       
+                     
+                  </a-assets>
+            
+  <!-- cities -->
+            
+        <a-marker id="animated-marker" type='barcode' value='0'>
+            <a-entity
+                animation-mixer
+                gltf-model="#jacksonville"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>
+      
+         <a-marker id="animated-marker" type='barcode' value='1'>
+            <a-entity
+                animation-mixer
+                gltf-model="#losangeles"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>    
+            
+            <a-marker id="animated-marker" type='barcode' value='2'>
+            <a-entity
+                animation-mixer
+                gltf-model="#chicago"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='3'>
+            <a-entity
+                animation-mixer
+                gltf-model="#austin"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='4'>
+            <a-entity
+                animation-mixer
+                gltf-model="#phoenix"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='5'>
+            <a-entity
+                animation-mixer
+                gltf-model="#neworleans"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='6'>
+            <a-entity
+                animation-mixer
+                gltf-model="#sanantonio"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='7'>
+            <a-entity
+                animation-mixer
+                gltf-model="#newyork"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+         <a-marker id="animated-marker" type='barcode' value='8'>
+            <a-entity
+                animation-mixer
+                gltf-model="#lasvegas"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+          <a-marker id="animated-marker" type='barcode' value='9'>
+            <a-entity
+                animation-mixer
+                gltf-model="#nashville"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+          <a-marker id="animated-marker" type='barcode' value='10'>
+            <a-entity
+                animation-mixer
+                gltf-model="#dc"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+          <a-marker id="animated-marker" type='barcode' value='11'>
+            <a-entity
+                animation-mixer
+                gltf-model="#atlanta"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+         <a-marker id="animated-marker" type='barcode' value='12'>
+            <a-entity
+                animation-mixer
+                gltf-model="#oklahoma"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+         <a-marker id="animated-marker" type='barcode' value='13'>
+            <a-entity
+                animation-mixer
+                gltf-model="#miami"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+          <a-marker id="animated-marker" type='barcode' value='14'>
+            <a-entity
+                animation-mixer
+                gltf-model="#denver"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+          <a-marker id="animated-marker" type='barcode' value='15'>
+            <a-entity
+                animation-mixer
+                gltf-model="#sanfran"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>          
+
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
